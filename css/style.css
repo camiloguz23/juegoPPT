@@ -1,7 +1,8 @@
 body {
     text-align: center;
-    font-size: x-large;
+    font-size: 15px;
     font-family: 'Grandstander', cursive;
+    background-color: #28df99;
 }
 button {
     background-color: #7fcd91;
@@ -17,4 +18,12 @@ button {
 button:hover {
     background-color: green;
     cursor: pointer;
+}
+
+.contenedor {
+    background-color: hsla(0, 100%, 100%, 0.7);
+    width: fit-content;
+    margin-left: 450px;
+    padding: 7px;
+    border-radius: 10px;
 }

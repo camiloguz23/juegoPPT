@@ -40,12 +40,15 @@ function maquina() {
 
 function puntaje(usuario,maquina) {
    
-    if (usuario > maquina) {
+    if (usuario == 1 && maquina == 0 || usuario == 2 && maquina == 1 || usuario == 0 && maquina == 2) {
         resultado.textContent = "Ganador";
         puntajeUsu ++
         marcadorUsu.textContent = puntajeUsu
 
-    }else{
+    }else if (usuario == maquina) {
+        resultado.textContent = "Empate";
+    } else {
+        
         resultado.textContent = "Perdio";
         puntajeMaq ++
         marcadorMaq.textContent = puntajeMaq
